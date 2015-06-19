@@ -39,7 +39,7 @@ namespace System.Data.SqlClient
         /// </summary>
         /// <param name="propertyInfo"></param>
         /// <returns></returns>
-        public static string GetColumnName(PropertyInfo propertyInfo)
+        private static string GetColumnName(PropertyInfo propertyInfo)
         {
             //check first for the DataAnnotations.ColumnAttribtue
             var columnAttribute = propertyInfo.GetCustomAttribute<ColumnAttribute>(false);
